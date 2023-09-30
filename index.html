@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="headingContainer">
+        <h1>Job Application Tracker</h1>
+    </div>
+    <div id="formContainer">
+        <form id="jobForm">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" required>
+
+            <label for="positionName">Position Name:</label>
+            <input type="text" id="positionName" required>
+
+            <label for="dateApplied">Date Applied:</label>
+            <input type="date" id="dateApplied" required>
+
+            <button type="button" id="addButton">Add</button>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Company</th>
+                <th>Date Applied</th>
+                <th>Application Status</th>
+                <th>Status Date</th>
+                <th>Delete?</th>
+            </tr>
+        </thead>
+        <tbody id="applicationList">
+        </tbody>
+    </table>
+    <footer>
+        <p>Final Project - CS50x 2023</p>
+    </footer>
+</body>
+</html>
