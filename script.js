@@ -6,6 +6,9 @@ let jobApplications = [];
 window.addEventListener("load", () => {
   jobApplications = JSON.parse(localStorage.getItem("jobApplications")) || [];
   jobApplications.forEach((application, index) => {
+    if (!application.statusDate) {
+      application.statusDate = application.dateApplied;
+    }
     addApplicationRow(application, index);
   });
 });
